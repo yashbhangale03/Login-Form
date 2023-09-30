@@ -1,0 +1,215 @@
+@font-face {
+    font-family: head_font;
+    src: url(Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: content_font;
+    src: url(IBMPlexMono-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(Images/nature_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    overflow-x: hidden ;
+
+}
+
+/* Header Design */
+ 
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: rgba(196, 196, 196, 0.038); */
+    /* backdrop-filter: blur(50px); */
+    font-family: head_font;
+}
+
+/* Logo Desgin */
+.logo{
+    font-size: 5rem;
+    width: fit-content;
+    color: rgb(255, 140, 0);
+    margin-left: 0.6rem;
+}
+/* Navigation Design */
+
+.main-box{
+    visibility: hidden;
+}
+.navigation{
+    margin-top: 1.4rem;
+    margin-right: 1rem;
+}
+.navigation a{
+    text-decoration: none;
+    margin: 1.5rem;
+    color: darkorange;
+    font-size: 1.8rem;
+    transition-duration: 0.2s;
+    padding: 0.2vw  ;
+}
+.navigation a:hover{    
+    border: 0.2rem solid darkorange;
+    border-radius: 0.4rem;
+    background-color: darkorange;
+    color: white;
+    padding: 0.2vw;
+}
+
+/* Main Design */
+main{
+    width: 100%;
+    transform: translate(37%,9%);
+}
+section{
+    text-align: center;
+    margin-top: 7rem;
+    backdrop-filter: blur(4px);
+    width: 25%;
+    padding: 30px;
+    box-shadow: 0px 5px 5px 5px rgb(47, 46, 46);
+    font-family: content_font;
+    
+}
+
+
+.registration i{
+    color: white;
+    float: right;
+    font-size: 20px;
+}
+.registration:hover{
+    text-shadow: 0px 5px 5px rgb(255, 166, 0);
+}
+
+h2{
+    font-size: 4.0rem;
+    color: rgb(255, 140, 0);
+    font-weight: 900px;
+    font-family: head_font;
+    margin-bottom: 2.5rem;
+}
+.info{
+    color: orange;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+input{
+    font-size: 20px;
+    border-radius: 0.3rem;
+    transition-duration: 0.2s;
+    width: 50%;
+
+}
+input:hover{
+    border: 3px solid rgb(255, 166, 0);
+    box-shadow: 0px 5px 10px darkorange ;
+}
+.forget{
+    font-size: 20px;
+    float: right;
+    margin-top: -10px;
+    color: white;
+    text-decoration: none;
+    font-family: content_font;
+    margin-right: 4px;
+}
+
+.forget:hover{
+    color:rgb(255, 166, 0);
+    font-weight: bold;
+    text-shadow: 0px 5px 15px rgb(255, 166, 0);
+}
+button{
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 30%;
+    cursor: pointer;
+    border: 2px solid darkorange;
+    font-family: content_font;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button:hover{
+    box-shadow: 0px 5px 20px darkorange ;
+    background-color: darkorange;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Footer Design */
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+
+}
+.Social_icons a{
+    /* padding: 5px; */
+    font-size: 35px;
+    margin-right: 10px;
+}
+.facebook{
+    border: 2px solid rgb(61, 61, 241);
+    border-radius: 50%;
+    padding: 8px;
+    color: rgb(46, 46, 225);
+    transition-duration: 0.3s;
+    
+}
+.facebook:hover{
+    box-shadow: 0px 0px 30px rgb(61, 61, 241);
+    text-shadow: 0px 0px 5px rgb(61, 61, 241);
+    color: white;
+    background-color: rgb(61, 61, 241);
+}
+.fa-facebook{
+    font-size: 35px;
+}
+.instagram{
+    border: 2px solid rgb(215, 22, 218);
+    border-radius: 50%;
+    padding: 8px;
+    color:rgb(215, 22, 218) ;
+    transition-duration: 0.3s;
+    
+}
+.instagram:hover{
+    box-shadow: 0px 0px 30px rgb(215, 22, 218);
+    text-shadow: 0px 0px 5px rgb(215, 22, 218);
+    color: white;
+    background-color: rgb(215, 22, 218);
+}
+.fa-instagram{
+    font-size: 35px;
+}
+.linkedin{
+    /* background-color: white; */
+    border: 2px solid rgb(0, 72, 255) ;
+    border-radius: 50%;
+    padding: 8px;
+    color:rgb(0, 72, 255) ;
+    transition-duration: 0.3s;
+}
+.linkedin:hover{
+    box-shadow: 0px 0px 30px rgb(0, 72, 255);
+    text-shadow: 0px 0px 5px rgb(0, 72, 255) ;
+    color: white;
+    background-color: rgb(0, 72, 255) ;
+}
+.fa-linkedin{
+    font-size: 35px;
+}

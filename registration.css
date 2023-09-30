@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: head_font;
+    src: url(Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: content_font;
+    src: url(IBMPlexMono-Light.ttf);
+}
+body{
+    background-image: url(Images/nature_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    overflow: hidden;
+}
+
+/* Header Design */
+ 
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: head_font;
+}
+
+/* Logo Desgin */
+.logo{
+    font-size: 5rem;
+    width: fit-content;
+    color: rgb(255, 140, 0);
+    margin-left: 0.6rem;
+}
+/* Navigation Design */
+
+.main-box{
+    visibility: hidden;
+}
+.navigation{
+    margin-top: 1.4rem;
+    margin-right: 1rem;
+}
+.navigation a{
+    text-decoration: none;
+    margin: 1.5rem;
+    color: darkorange;
+    font-size: 1.8rem;
+    transition-duration: 0.2s;
+    padding: 0.2vw  ;
+}
+.navigation a:hover{    
+    border: 0.2rem solid darkorange;
+    border-radius: 0.4rem;
+    background-color: darkorange;
+    color: white;
+    padding: 0.2vw;
+}
+
+/* Main Design */
+
+main{
+    width: 100%;
+    transform: translate(35%,9%);
+}
+section{
+    text-align: center;
+    margin-top: -2rem;
+    backdrop-filter: blur(4px);
+    /* padding: 10px; */
+    box-shadow: 0px 5px 5px 5px rgb(47, 46, 46);
+    width: 30%;
+    font-family: content_font;
+}
+
+h2{
+    font-size: 4.0rem;
+    color: rgb(255, 140, 0);
+    font-weight: 900px;
+    font-family: head_font;
+    margin-bottom: 1.5rem;
+}
+.info{
+    color: orange;
+    font-size: 1.8rem;
+    margin-bottom: 1.0rem;
+}
+input{
+    font-size: 20px;
+    width: 55%;
+    border-radius: 0.3rem;
+    transition-duration: 0.1s;
+}
+input:hover{
+    border: 3px solid rgb(255, 166, 0);
+    box-shadow: 0px 5px 10px darkorange ;
+}
+.forget{
+    float: right;
+    margin-top: -10px;
+    color: white;
+    text-decoration: none;
+    font-family: content_font;
+    font-size: 20px;
+}
+
+.forget:hover{
+    color:rgb(255, 166, 0);
+    font-weight: bold;
+    text-shadow: 0px 5px 15px rgb(255, 166, 0);
+}
+button{
+    padding: 8px;
+    font-size: 1.5rem;
+    width: 30%;
+    cursor: pointer;
+    border: 2px solid darkorange;
+    font-family: content_font;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button:hover{
+    box-shadow: 0px 5px 20px darkorange ;
+    background-color: darkorange;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* Footer Design */
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+
+}
+.Social_icons a{
+    /* padding: 5px; */
+    font-size: 35px;
+    margin-right: 10px;
+}
+.facebook{
+    border: 2px solid rgb(61, 61, 241);
+    border-radius: 50%;
+    padding: 5px;
+    color: rgb(46, 46, 225);
+    transition-duration: 0.3s;
+    
+}
+.facebook:hover{
+    box-shadow: 0px 0px 30px rgb(61, 61, 241);
+    text-shadow: 0px 0px 5px rgb(61, 61, 241);
+    color: white;
+    background-color: rgb(61, 61, 241);
+}
+.fa-facebook{
+    font-size: 40px;
+}
+.instagram{
+    border: 2px solid rgb(215, 22, 218);
+    border-radius: 50%;
+    padding: 5px;
+    color:rgb(215, 22, 218) ;
+    transition-duration: 0.3s;
+    
+}
+.instagram:hover{
+    box-shadow: 0px 0px 30px rgb(215, 22, 218);
+    text-shadow: 0px 0px 5px rgb(215, 22, 218);
+    color: white;
+    background-color: rgb(215, 22, 218);
+}
+.fa-instagram{
+    font-size: 40px;
+}
+.linkedin{
+    /* background-color: white; */
+    border: 2px solid rgb(0, 72, 255) ;
+    border-radius: 50%;
+    padding: 5px;
+    color:rgb(0, 72, 255) ;
+    transition-duration: 0.3s;
+}
+.linkedin:hover{
+    box-shadow: 0px 0px 30px rgb(0, 72, 255);
+    text-shadow: 0px 0px 5px rgb(0, 72, 255) ;
+    color: white;
+    background-color: rgb(0, 72, 255) ;
+}
+.fa-linkedin{
+    font-size: 40px;
+}

@@ -1,0 +1,349 @@
+@media screen and (min-width: 1400px) {
+    main{
+        transform: translate(30%,9%);
+    }
+    section{
+        width: 40%;
+        padding:10px;
+    }
+    .logo{
+        margin-top: -15px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1399px) {
+    main{
+        transform: translate(30%,9%);
+    }
+    section{
+        width: 42%;
+        padding:10px;
+    }
+    .logo{
+        margin-top: -15px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    main{
+        transform: translate(28%,9%);
+    }
+    section{
+        width: 45%;
+        padding:10px;
+    }
+    .navigation a{
+        margin: 1rem;
+        padding: 0;
+    }
+    .navigation{
+        margin-right: 0.5rem;
+    }
+    .logo{
+        margin-top: -15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {    
+    main{
+        transform: translate(26%,18%);
+    }
+    section{
+        width: 50%;
+        padding:10px;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .logo{
+        font-size: 4rem;
+        margin-top: -15px;
+    }
+    .navigation{
+        margin-right: 0px;
+    }
+    .info{
+        font-size: 23px;
+    }
+    .forget{
+        font-size: 20px;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+    
+    .navigation{
+        visibility: visible;
+    }
+
+    .logo{
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    main{
+        transform: translate(20%,30%);
+    }
+    section{
+        width: 60%;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .info{
+        font-size: 18px;
+    }
+    .forget{
+        font-size: 15px;
+    }
+    button{
+        font-size: 1.2rem;
+    }
+    .head{
+        flex-direction: row-reverse;
+    }
+    .main-box {
+        visibility: visible;
+        position: relative;
+        width: 100%;
+    }
+
+    .main-box .sidebar-menu {
+        position: fixed;
+        height: 10vh;
+        width: 50px;
+        left: -130px;
+        transition: all 0.3s linear;
+
+    }
+
+    .sidebar-menu {
+        position: absolute;
+        height: 30px;
+    }
+
+    .sidebar-menu {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 10px;
+        line-height: 30px;
+        text-decoration: none;
+        min-width:fit-content;
+    }
+
+    .sidebar-menu .menu {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+
+    .sidebar-menu .menu li {
+        margin-top: 6px;
+        padding: 8px 10px;
+        list-style: none;
+    }
+
+    .sidebar-menu .menu a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .sidebar-menu .menu li:hover {
+        border-left: 5px solid darkorange;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .main-box .btn-one i {
+        color: darkorange;
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        left: -220px;
+        line-height: 60px;
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.3s linear;
+    }
+
+    .sidebar-menu .btn-two i {
+        color: white;
+        font-size: 25px;
+        line-height: 60px;
+        position: absolute;
+        left: 100px;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+    #check:checked~.sidebar-menu {
+        left: 0;
+        
+    }
+    #check:checked~ .sidebar-menu .menu {
+        backdrop-filter: blur(4px);
+        box-shadow: 0px 5px 10px rgb(146, 145, 145);
+        width: 200px;
+        
+    }
+    #check:checked~ .sidebar-menu .menu section{
+        position: relative;
+        margin-top: 15rem;
+    }
+
+    #check:checked~.btn-one i {
+        opacity: 0;
+    }
+
+    #check:checked~.sidebar-menu .btn-two i {
+        opacity: 1;
+    }
+    .navigation{
+        visibility: hidden;
+    }
+
+    .logo{
+        font-size: 4rem;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:575px){
+    .navigation{
+        visibility:hidden;
+    }
+
+    .logo{
+        font-size: 3.5rem;
+        margin-right: 10px;
+    }
+    .head{
+        flex-direction: row-reverse;
+    }
+    .main-box {
+        visibility: visible;
+        position: relative;
+        width: 100%;
+    }
+
+    .main-box .sidebar-menu {
+        position: fixed;
+        height: 10vh;
+        width: 50px;
+        left: -130px;
+        transition: all 0.3s linear;
+
+    }
+
+    .sidebar-menu {
+        position: absolute;
+        height: 30px;
+    }
+
+    .sidebar-menu {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 10px;
+        line-height: 30px;
+        text-decoration: none;
+        min-width:fit-content;
+    }
+
+    .sidebar-menu .menu {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+
+    .sidebar-menu .menu li {
+        margin-top: 6px;
+        padding: 8px 10px;
+        list-style: none;
+    }
+
+    .sidebar-menu .menu a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .sidebar-menu .menu li:hover {
+        border-left: 5px solid darkorange;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .main-box .btn-one i {
+        color: darkorange;
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        left: -10rem;
+        line-height: 60px;
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.3s linear;
+    }
+
+    .sidebar-menu .btn-two i {
+        color: white;
+        font-size: 25px;
+        line-height: 60px;
+        position: absolute;
+        left: 100px;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+    #check:checked~.sidebar-menu {
+        left: 0;
+        
+    }
+    #check:checked~ .sidebar-menu .menu {
+        backdrop-filter: blur(4px);
+        box-shadow: 0px 5px 10px rgb(146, 145, 145);
+        width: 200px;
+        
+    }
+    #check:checked~ .sidebar-menu .menu section{
+        position: relative;
+        margin-top: 15rem;
+    }
+
+    #check:checked~.btn-one i {
+        opacity: 0;
+    }
+
+    #check:checked~.sidebar-menu .btn-two i {
+        opacity: 1;
+    }
+    main{
+        transform: translate(15%,27%);
+    }
+    section{
+        width: 70%;
+        padding: 10px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .info{
+        font-size: 17px;
+    }
+    .forget{
+        font-size: 15px;
+    }
+    button{
+        font-size: 1rem;
+    }
+} 
